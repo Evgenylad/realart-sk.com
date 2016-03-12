@@ -1,7 +1,7 @@
 {
   "name": "realart-sk.com",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "description": "Сайт художника Карена Шахвердяна",
   "author": "Evgeny Ladyzhenskiy",
   "repository": {
