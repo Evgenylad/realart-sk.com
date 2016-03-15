@@ -17,12 +17,123 @@
     background-color: $btn-background;
   }
   &__link {
-
     vertical-align: middle;
     font-size: 18px;
     line-height: 40px;
     text-decoration: none;
     font-family: $font-bold;
     color: $secondary-color;
+  }
+  &__close-btn {
+    position: absolute;
+    top: 450px;
+    left: 20px;
+
+    width: 40px;
+    height: 40px;
+
+    z-index: 10px;
+  }
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: auto;
+
+  z-index: 10;
+
+  background-color: black;
+  border: none;
+  &__image {
+  fill: $base-background;
+  }
+}
+
+
+.sub-menu {
+
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+
+  border-radius: 10px;
+  background-color: $btn-background;
+  &__link {
+    display: inline-block;
+    width: 100%;
+
+    font-size: 14px;
+    line-height: 26px;
+    color: $secondary-color;
+    text-align: center;
+  }
+}
+
+
+
+@media (min-width: 768px)  {
+  .main-nav {
+    &__close-btn {
+      display: none;
+    }
+    &__list {
+      font-size: 0;
+    }
+    &__item {
+      display: inline-block;
+      width: 1/6*100%;
+
+      background-color: $btn-background;
+      border-bottom: none;
+      &--dropdown {
+        position: relative;
+      }
+    }
+    &__link {
+      font-size: 14px;
+      line-height: 26px;
+      color: $secondary-color;
+      padding-bottom: 40px;
+    }
+  }
+
+  .sub-menu {
+    position: absolute;
+    display: none;
+    left: 0;
+    right: 0;
+    top: 60px;
+
+    z-index: 10;
+
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    border-radius: 10px;
+    background-color: $btn-background;
+    &__link {
+      display: inline-block;
+      width: 100%;
+
+      padding-left: 15px;
+
+      font-size: 14px;
+      line-height: 26px;
+      color: $secondary-color;
+      text-align:left;
+    }
+  }
+
+  .main-nav__item--dropdown:hover .sub-menu {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: none;
   }
 }

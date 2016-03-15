@@ -7,8 +7,7 @@ module.exports = function(grunt) {
     sass: {
       style: {
         files: {
-          "css/style.css": "sass/style.scss",
-          "css/bootstrap.css": "sass/bootstrap/bootstrap.scss"
+          "css/style.css": "sass/style.scss"
         }
       }
     },

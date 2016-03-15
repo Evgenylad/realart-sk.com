@@ -1,1 +1,11 @@
-@import "normalize.scss"
+@import "global/normalize.scss";
+@import "variables.scss";
+@import "blocks/body.scss";
+@import "global/fonts.scss";
+@import "blocks/site-wrapper.scss";
+@import "blocks/buttons.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/top-row.scss";
+@import "blocks/main-footer.scss";
+@import "blocks/social-block.scss";

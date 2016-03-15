@@ -1,0 +1,22 @@
+.site-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 320px)  {
+  .site-wrapper {
+    min-width: 320px;
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 768px)  {
+  .site-wrapper {
+    min-width: 768px;
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  width: 1200px;
+}
