@@ -1,0 +1,45 @@
+.biography-content {
+  float: right;
+  width: 60%;
+  display: table;
+  margin: auto;
+  margin-top: 145px;
+  margin-bottom: 45px;
+  margin-right: 20%;
+  &__header {
+    margin: 0;
+    margin-bottom: 15px;
+
+    font-size: 16px;
+    text-align: left;
+    i {
+      font-style: normal;
+      color: red;
+    }
+  }
+  p {
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  &__item {
+    display: table;
+  }
+  &__caption {
+    display: table-caption;
+    text-align: left;
+  }
+  &__row {
+    display: table-row;
+  }
+  &__cell {
+    display: table-cell;
+    padding-right: 5px;
+    text-align: left;
+  }
+  &__cell {
+    &:last-of-type {
+      max-width: 365px;
+    }
+  }
+}

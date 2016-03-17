@@ -1,0 +1,18 @@
+.contacts {
+  max-width: 210px;
+
+  margin-top: 135px;
+  margin-left: 17%;
+  margin-bottom: 274px;
+  &__header {
+    text-align: left;
+    font-size: 16px;
+    i {
+      font-style: normal;
+      color: red;
+      }
+    }
+  &__item {
+    text-align: left;
+  }
+}

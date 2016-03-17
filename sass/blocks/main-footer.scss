@@ -22,18 +22,21 @@
   }
   &__menu-link {
     color: $secondary-color;
+    text-transform: uppercase;
     text-decoration: none;
     font-size: 14px;
-    line-height: 18px;
   }
 }
 
-@media (min-width: 720px) {
+@media (min-width: 768px) {
   .main-footer {
+    max-height: 41px;
     display: inline-block;
     &__copyright {
       float: left;
       width: 40%;
+
+      padding: 10px;
 
       text-align: left;
     }
@@ -41,7 +44,7 @@
       float: right;
       width: 30%;
 
-      padding: 15px;
+      padding: 10px;
       text-align: right;
     }
     &__menu-item {

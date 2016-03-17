@@ -1,5 +1,6 @@
 @import "global/normalize.scss";
 @import "variables.scss";
+@import "mixins.scss";
 @import "blocks/body.scss";
 @import "global/fonts.scss";
 @import "blocks/site-wrapper.scss";
@@ -7,5 +8,13 @@
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/top-row.scss";
+@import "blocks/content.scss";
 @import "blocks/main-footer.scss";
 @import "blocks/social-block.scss";
+@import "blocks/gallery-wrapper.scss";
+@import "blocks/gallery.scss";
+@import "blocks/exhibitions-list.scss";
+@import "blocks/biography-wrapper.scss";
+@import "blocks/biography-content.scss";
+@import "blocks/biography-photo.scss";
+@import "blocks/contacts.scss";
