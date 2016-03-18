@@ -1,9 +1,9 @@
 .biography-content {
-  float: right;
+
   width: 60%;
   display: table;
   margin: auto;
-  margin-top: 145px;
+  margin-top: 45px;
   margin-bottom: 45px;
   margin-right: 20%;
   &__header {
@@ -41,5 +41,13 @@
     &:last-of-type {
       max-width: 365px;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .biography-content {
+    float: right;
+
+    margin-top: 145px;
   }
 }

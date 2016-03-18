@@ -1,0 +1,16 @@
+.press-item {
+  margin-bottom: 15px;
+  &:first-of-type {
+    padding-top: 60px;
+  }
+  &__description {
+    padding-left: 25px;
+  }
+  &__link {
+    text-decoration: none;
+    color: red;
+  }
+  &:last-of-type {
+    margin-bottom: 190px;
+  }
+}

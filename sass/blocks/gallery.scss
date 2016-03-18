@@ -1,6 +1,7 @@
 .gallery {
   &__items {
     display: flex;
+    align-items: flex-start;
     width: 100%;
 
     text-align: left;

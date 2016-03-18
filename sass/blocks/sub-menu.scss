@@ -1,0 +1,53 @@
+.sub-menu {
+
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+
+  background-color: $btn-background;
+  &__link {
+    display: inline-block;
+    width: 100%;
+
+    font-size: 14px;
+    line-height: 26px;
+    color: $secondary-color;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px)  {
+  .sub-menu {
+    position: absolute;
+    display: none;
+    left: 0;
+    right: 0;
+    top: 36px;
+
+    z-index: 10;
+
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    background-color: $btn-background;
+    &__item {
+      &:hover {
+        background-color: $base-background;
+        .sub-menu__link {
+          color: $base-color-bold;
+        }
+      }
+    }
+    &__link {
+
+      padding-left: 15px;
+
+      text-decoration: none;
+
+      text-align:left;
+    }
+  }
+}

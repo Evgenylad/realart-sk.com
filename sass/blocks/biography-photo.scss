@@ -1,6 +1,14 @@
 .biography-photo {
-  float: left;
-  width: 20%;
 
-  margin-top: 145px;
+  margin-top: 45px;
+}
+
+
+@media (min-width: 768px){
+  .biography-photo {
+    float: left;
+    width: 20%;
+
+    margin-top: 145px;
+  }
 }

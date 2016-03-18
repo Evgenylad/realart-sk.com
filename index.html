@@ -13,8 +13,8 @@
 
         </div>
 
-        <nav class="main-nav main-nav--open">
-          <button class="menu-toggle">
+        <nav class="main-nav">
+          <button class="menu-toggle  menu-toggle--closed">
             <svg class="menu-toggle__image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
               <g>
@@ -25,9 +25,9 @@
             </svg>
           </button>
 
-          <ul class="main-nav__list">
-            <li class="main-nav__item  main-nav__item--active"><a class="main-nav__link" href="index.html">Home</a></li>
-            <li class="main-nav__item  main-nav__item--dropdown"><a class="main-nav__link" href="gallery.html">Gallery</a>
+          <ul class="main-nav__list  main-nav__list--closed">
+            <li class="main-nav__item  main-nav__item--active  main-nav__item--active-shown"><a class="main-nav__link" href="index.html">Home</a></li>
+            <li class="main-nav__item  main-nav__item--dropdown"><a class="main-nav__link  main-nav__link--disabled" href="gallery.html">Gallery<i class="icon-down-dir"></i></a>
               <ul class="sub-menu">
                 <li class="sub-menu__item"><a class="sub-menu__link" href="pentagramm.html">pentagramm .....</a></li>
                 <li class="sub-menu__item"><a class="sub-menu__link" href="landscape.html">landscape</a></li>
@@ -40,13 +40,6 @@
             <li class="main-nav__item  main-nav__item--close"><a class="main-nav__link" href="contact.html">Contact</a></li>
           </ul>
 
-          <button class="main-nav__close-btn">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            	 width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
-            <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199
-            	22.199,19.396 13.903,11.1 "/>
-            </svg>
-          </button>
         </nav>
       </header>
 
@@ -70,6 +63,9 @@
           <li class="main-footer__menu-item"><a class="main-footer__menu-link" href="legal.html">Legal</a></li>
         </ul>
       </footer>
+
+      <script src="js/script.js"></script>
+
     </div>
   </body>
 </html>
