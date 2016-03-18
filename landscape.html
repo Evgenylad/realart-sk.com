@@ -47,7 +47,7 @@
       <main class="gallery-wrapper">
         <div class="gallery__items">
           <a href="img/galerie/landscape/ararat_b.jpg">
-            <img class="gallery__item__image" src="img/galerie/landscape/ararat_a.jpg" alt="ararat" width="150" height="150">
+            <img class="gallery__item__image" data-milkbox="gall1" src="img/galerie/landscape/ararat_a.jpg" alt="ararat" width="150" height="150">
           </figure>
 
           <a href="img/galerie/landscape/erwachung_b.jpg">
@@ -180,11 +180,15 @@
     $(this).magnificPopup({
         delegate: 'a', // the selector for gallery item
         type: 'image',
+        removalDelay: 300,
+        mainClass: 'mfp-with-fade',
         gallery: {
           enabled:true
         }
+
     });
 });
+
 
     </script>
   </body>
