@@ -1,3 +1,19 @@
 .biography-wrapper {
   @include clearfix;
 }
+
+@media (min-width: 768px) {
+  .biography-wrapper {
+    box-sizing: border-box;
+    padding-top: 44px;
+    min-height: 703px
+  }
+}
+
+@media (min-width: 1200px) {
+  .biography-wrapper {
+    box-sizing: border-box;
+    padding-top: 44px;
+    min-height: 701px
+  }
+}

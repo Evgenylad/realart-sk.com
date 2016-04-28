@@ -1,12 +1,13 @@
 .exhibitions-list {
   display: table;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 40px;
   margin-bottom: 45px;
+  padding-right: 15px;
   &__header {
     display: table-caption;
 
-    padding-left: 42px;
+    padding-left: 30px;
     margin-bottom: 80px;
 
     font-size: 16px;
@@ -14,14 +15,25 @@
   }
   &__items {
     display: table-row;
+    margin-right: 10px;
   }
   &__item {
     display: table-cell;
 
     height: 35px;
-    padding-left: 42px;
+    padding-left: 30px;
 
-    vertical-align: middle;
+    vertical-align: top;
     text-align: left;
+  }
+  &__link {
+    text-decoration: none;
+    color: #FF0000;
+  }
+}
+
+@media (min-width: 900px) {
+.exhibitions-list {
+  margin-top: 100px;
   }
 }

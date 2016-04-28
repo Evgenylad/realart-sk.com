@@ -4,34 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>KAREN SHAHVERDYAN</title>
-    <link href="css/normalize.css" rel="stylesheet">
+
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="site-wrapper">
       <header class="page-header">
         <div class="top-row">
-
+          <div class="top-row__lang">
+            <a class="top-row__lang-item" href="#">DEUTSCH</a>
+            <a class="top-row__lang-item" href="#">ENGLISH</a>
+          </div>
         </div>
 
         <nav class="main-nav">
-          <button class="menu-toggle  menu-toggle--closed">
-            <svg class="menu-toggle__image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-           width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
-              <g>
-                <rect width="22.928" height="3.964"/>
-                <rect y="9.009" width="22.928" height="3.964"/>
-                <rect y="18.018" width="22.928" height="3.964"/>
-              </g>
-            </svg>
-          </button>
+          <button class="menu-toggle  menu-toggle--closed"></button>
 
           <ul class="main-nav__list  main-nav__list--closed">
             <li class="main-nav__item"><a class="main-nav__link" href="index.html">Home</a></li>
             <li class="main-nav__item  main-nav__item--dropdown"><a class="main-nav__link  main-nav__link--disabled" href="gallery.html">Gallery<i class="icon-down-dir"></i></a>
               <ul class="sub-menu">
                 <li class="sub-menu__item"><a class="sub-menu__link" href="pentagramm.html">pentagramm .....</a></li>
-                <li class="sub-menu__item"><a class="sub-menu__link" href="landscape.html">landscape</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="landscape.html">landscape .....</a></li>
                 <li class="sub-menu__item"><a class="sub-menu__link" href="more.html">more .....</a></li>
               </ul>
             </li>
@@ -49,34 +43,55 @@
           <h1 class="contacts__header"> <i>K</i>AREN <i>S</i>HAHVERDYAN</h1>
 
           <p class="contacts__item">
-          Heidenreichstr. 26
-          64287 Darmstadt
-          Germany</p>
-
-          <p class="contacts__item">
-          Tel: +49 (0) 6151 15 90 252
-          Mobile: +49(0) 171 170 65 45
-          info@realart-sk.com</p>
+          <span class="contacts__phone"> Tel:
+            <a class="contacts__phone-link" href="tel:+491711706545">+49 171 170 65 45</a>
+          </span>
+          <a class="contacts__email" href="mailto:info@realart-sk.com?subject=Письмо с сайта">info@realart-sk.com</a>
+          </p>
 
           <p class="contacts__item">www.realart-sk.com</p>
+          <form class="contact-form" action="#" method="get">
+            <h3 class="contact-form__header">EMAIL CONTACT</h3>
+            <p class="contact-form__description">You are welcome to use the following form to contact me</p>
+
+            <div class="contact-form__input-group">
+              <label class="contact-form__label" for="email">Your Email Address *</label>
+              <input class="contact-form__input" type="email" id="email" name="email"  equired>
+            </div>
+
+            <div class="contact-form__input-group">
+              <label class="contact-form__label" for="subject">Subject *</label>
+              <input class="contact-form__input" type="text" id="subject" name="subject" required>
+            </div>
+
+            <div class="contact-form__input-group">
+              <label class="contact-form__label" for="textarea">Message *</label>
+              <textarea class="contact-form__input" id="textarea" rows="5" name="textarea" required></textarea>
+            </div>
+
+            <div class="contact-form__btns">
+              <button class="contact-form__btn" type="submit">Submit</button>
+              <button class="contact-form__btn" type="reset">Reset</button>
+            </div>
+
+          </form>
         </div>
       </main>
 
       <footer class="main-footer">
         <div class="main-footer__copyright">
-          © COPYRIGHT KAREN SHAHVERDYAN 2014
+          © COPYRIGHT KAREN SHAHVERDYAN 2016
         </div>
-
-        <section class="social-block">
-          <a class="social-btn" href="#">Twitter<i class="icon-twitter"></i></a>
-          <a class="social-btn" href="https://www.facebook.com/realart.sk/?fref=ts">Facebook<i class="icon-facebook"></i></a>
-          <a class="social-btn" href="#" class="social-btn">VK<i class="icon-vkontakte"></i></a>
-        </section>
 
         <ul class="main-footer__menu">
           <li class="main-footer__menu-item"><a class="main-footer__menu-link" href="links.html">Links</a></li>
+          <li class="main-footer__menu-item">
+            <a class="main-footer__menu-link" href="https://www.facebook.com/realart.sk/?fref=ts" target="_blank"><i class="icon-facebook"></i></a>
+          </li>
           <li class="main-footer__menu-item"><a class="main-footer__menu-link" href="legal.html">Legal</a></li>
         </ul>
+
+        <a href="www.nerd-studio.biz" hidden>www.nerd-studio.biz<a>
       </footer>
 
       <script src="js/script.js"></script>

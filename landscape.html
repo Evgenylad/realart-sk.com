@@ -4,34 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>KAREN SHAHVERDYAN</title>
+    <link href="css/milkbox/milkbox.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/mootools-core.js"></script>
+    <script type="text/javascript" src="js/mootools-more.js"></script>
+    <script type="text/javascript" src="js/milkbox.js"></script>
   </head>
   <body>
     <div class="site-wrapper">
       <header class="page-header">
-        <div class="top-row">
-
+        <div class="top-row  top-row--landscape">
+          <div class="top-row__lang">
+            <a class="top-row__lang-item" href="#">DEUTSCH</a>
+            <a class="top-row__lang-item" href="#">ENGLISH</a>
+          </div>
         </div>
 
         <nav class="main-nav">
-          <button class="menu-toggle  menu-toggle--closed">
-            <svg class="menu-toggle__image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-           width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
-              <g>
-                <rect width="22.928" height="3.964"/>
-                <rect y="9.009" width="22.928" height="3.964"/>
-                <rect y="18.018" width="22.928" height="3.964"/>
-              </g>
-            </svg>
-          </button>
+          <button class="menu-toggle  menu-toggle--closed"></button>
 
           <ul class="main-nav__list  main-nav__list--closed">
             <li class="main-nav__item"><a class="main-nav__link" href="index.html">Home</a></li>
             <li class="main-nav__item  main-nav__item--active  main-nav__item--active-shown  main-nav__item--dropdown"><a class="main-nav__link  main-nav__link--disabled" href="gallery.html">Gallery<i class="icon-down-dir"></i></a>
               <ul class="sub-menu">
                 <li class="sub-menu__item"><a class="sub-menu__link" href="pentagramm.html">pentagramm .....</a></li>
-                <li class="sub-menu__item"><a class="sub-menu__link" href="landscape.html">landscape</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="landscape.html">landscape .....</a></li>
                 <li class="sub-menu__item"><a class="sub-menu__link" href="more.html">more .....</a></li>
               </ul>
             </li>
@@ -44,150 +42,135 @@
         </nav>
       </header>
 
-      <main class="gallery-wrapper">
-        <div class="gallery__items">
-          <a href="img/galerie/landscape/ararat_b.jpg">
-            <img class="gallery__item__image" data-milkbox="gall1" src="img/galerie/landscape/ararat_a.jpg" alt="ararat" width="150" height="150">
-          </figure>
+      <main class="gallery-wrapper" id="box">
+        <div class="gallery__items" id="gallery">
+          <div class="gallery__item">
 
-          <a href="img/galerie/landscape/erwachung_b.jpg">
-            <img class="gallery__item__image" src="img/galerie/landscape/erwachung_a.jpg" alt="erwachung" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/landscape/ararat_b.jpg" title="KAREN SHAHVERDYAN ,,ararat... two sides,, 2006, oil on canvas, 120 X 140 cm">
+              <img class="gallery__image" src="img/galerie/landscape/ararat_a.jpg" alt="ararat" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/landscape/gewitter_II_b.jpg">
-            <img class="gallery__item__image" src="img/galerie/landscape/gewitter_II_a.jpg" alt="gewitter_II" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/landscape/erwachung_b.jpg" title="KAREN SHAHVERDYAN ,,to spring up,, 2007, oil on canvas, 100 X 130 cm">
+              <img class="gallery__image" src="img/galerie/landscape/erwachung_a.jpg" alt="erwachung" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/landscape/schöpfung_b.jpg">
-            <img class="gallery__item__image" src="img/galerie/landscape/schöpfung_a.jpg" alt="schöpfung" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/landscape/gewitter_II_b.jpg" title="KAREN SHAHVERDYAN ,,storm,, 2006, oil on canvas, 90 X 110 cm">
+              <img class="gallery__image" src="img/galerie/landscape/gewitter_II_a.jpg" alt="gewitter_II" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/landscape/abstrakte_realität_II_b.jpg">
-            <img class="gallery__item__image" src="img/galerie/landscape/abstrakte_realität_II_a.jpg" alt="abstrakte_realität_II" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/landscape/schopfung_b.jpg" title="KAREN SHAHVERDYAN ,,light,, 2007, oil on canvas, 130 X 130 cm">
+              <img class="gallery__image" src="img/galerie/landscape/schopfung_a.jpg" alt="schopfung" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/landscape/wüste_b.jpg">
-            <img class="gallery__item__image" src="img/galerie/landscape/wüste_a.jpg" alt="wüste" width="150" height="150">
-          </figure>
-        </div>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/landscape/abstrakte_realitat_II_b.jpg" title="KAREN SHAHVERDYAN ,,abstract reality,, 2006, oil on canvas, 90 X 110 cm">
+              <img class="gallery__image" src="img/galerie/landscape/abstrakte_realitat_II_a.jpg" alt="abstrakte_realität_II" width="150" height="150">
+            </a>
 
-        <div class="gallery__items">
-          <a href="img/galerie/landscape/berge_a.jpg">
-            <img class="gallery__item__image" src="img/galerie/landscape/berge_a.jpg" alt="berge" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/landscape/wuste_b.jpg" title="KAREN SHAHVERDYAN ,,the way in the desert,, 2007, oil on canvas, 90 X 110 cm">
+              <img class="gallery__image" src="img/galerie/landscape/wuste_a.jpg" alt="wuste" width="150" height="150">
+            </a>
+          </div>
 
-          <a href="img/galerie/landscape/spuren_a.jpg">
-            <img class="gallery__item__image" src="img/galerie/landscape/spuren_a.jpg" alt="spuren" width="150" height="150">
-          </figure>
+          <div class="gallery__item">
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/landscape/berge_b.jpg" title="KAREN SHAHVERDYAN ,,mountains,, 2002, oil on canvas, 80 X 100 cm">
+              <img class="gallery__image" src="img/galerie/landscape/berge_a.jpg" alt="berge" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/landscape/der_weg_winter_a.jpg">
-            <img class="gallery__item__image" src="img/galerie/landscape/der_weg_winter_a.jpg" alt="der_weg_winter" width="150" height="150">
-          <a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/landscape/spuren_b.jpg" title="KAREN SHAHVERDYAN ,,the footprints,, 2006, oil on canvas, 90 X 110 cm">
+              <img class="gallery__image" src="img/galerie/landscape/spuren_a.jpg" alt="spuren" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/landscape/graue_wolken_a.jpg">
-            <img class="gallery__item__image" src="img/galerie/landscape/graue_wolken_a.jpg" alt="graue_wolken" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/landscape/der_weg_winter_b.jpg" title="KAREN SHAHVERDYAN ,,der way-winter,, 2001, oil on canvas, 80 X 100 cm">
+              <img class="gallery__image" src="img/galerie/landscape/der_weg_winter_a.jpg" alt="der_weg_winter" width="150" height="150">
+            <a>
 
-          <a href="img/galerie/landscape/rotes_feld_a.jpg">
-            <img class="gallery__item__image" src="img/galerie/landscape/rotes_feld_a.jpg" alt="rotes_feld" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/landscape/graue_wolken_b.jpg" title="KAREN SHAHVERDYAN ,,gray clouds,, 2003, oil on canvas, 100 X 120 cm">
+              <img class="gallery__image" src="img/galerie/landscape/graue_wolken_a.jpg" alt="graue_wolken" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/landscape/blaue_wolken_a.jpg">
-            <img class="gallery__item__image" src="img/galerie/landscape/blaue_wolken_a.jpg" alt="blaue_wolken" width="150" height="150">
-          </a>
-        </div>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/landscape/rotes_feld_b.jpg" title="KAREN SHAHVERDYAN ,,pentadrom,, 2009, oil on canvas, 50 X 60 cm">
+              <img class="gallery__image" src="img/galerie/landscape/rotes_feld_a.jpg" alt="rotes_feld" width="150" height="150">
+            </a>
 
-        <div class="gallery__items">
-          <a href="img/galerie/landscape/berge_zwei_a.jpg">
-            <img class="gallery__item__image" src="img/galerie/landscape/berge_zwei_a.jpg" alt="berge_zwei" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/landscape/blaue_wolken_b.jpg" title="KAREN SHAHVERDYAN ,,blue sky,, 2003, oil on canvas, 100 X 120 cm">
+              <img class="gallery__image" src="img/galerie/landscape/blaue_wolken_a.jpg" alt="blaue_wolken" width="150" height="150">
+            </a>
+          </div>
 
-          <a href="img/galerie/landscape/luft_drachen_a.jpg">
-            <img class="gallery__item__image" src="img/galerie/landscape/luft_drachen_a.jpg" alt="luft_drachen" width="150" height="150">
-          </a>
+          <div class="gallery__item">
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/landscape/berge_zwei_b.jpg" title="KAREN SHAHVERDYAN ,,two-2,, 2003, oil on canvas, 80 X 100 cm">
+              <img class="gallery__image" src="img/galerie/landscape/berge_zwei_a.jpg" alt="berge_zwei" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/landscape/balance_1_a.jpg">
-            <img class="gallery__item__image" src="img/galerie/landscape/balance_1_a.jpg" alt="balance_1" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/landscape/luft_drachen_b.jpg" title="KAREN SHAHVERDYAN ,,air kites,, 2001, oil on canvas, 80 X 100cm">
+              <img class="gallery__image" src="img/galerie/landscape/luft_drachen_a.jpg" alt="luft_drachen" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/landscape/balance_sommer_a.jpg">
-            <img class="gallery__item__image" src="img/galerie/landscape/balance_sommer_a.jpg" alt="balance_sommer" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/landscape/balance_1_b.jpg" title="KAREN SHAHVERDYAN ,,balance-spring,, 2001, oil on canvas, 90 X 110cm">
+              <img class="gallery__image" src="img/galerie/landscape/balance_1_a.jpg" alt="balance_1" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/landscape/balance_herbst__a.jpg">
-            <img class="gallery__item__image" src="img/galerie/landscape/balance_herbst__a.jpg" alt="balance_herbst" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/landscape/balance_sommer_b.jpg" title="KAREN SHAHVERDYAN ,,balance-summer,, 2003, oil on canvas, 90 X 110 cm">
+              <img class="gallery__image" src="img/galerie/landscape/balance_sommer_a.jpg" alt="balance_sommer" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/landscape/balance_winter__a.jpg">
-            <img class="gallery__item__image" src="img/galerie/landscape/balance_winter__a.jpg" alt="balance_winter" width="150" height="150">
-          </a>
-        </div>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/landscape/balance_herbst__b.jpg" title="KAREN SHAHVERDYAN ,,balance-autumn,, 2003, oil on canvas, 90 X 110 cm">
+              <img class="gallery__image" src="img/galerie/landscape/balance_herbst__a.jpg" alt="balance_herbst" width="150" height="150">
+            </a>
 
-        <div class="gallery__items">
-          <a href="img/galerie/landscape/abstrakte_realität_a.jpg">
-            <img class="gallery__item__image" src="img/galerie/landscape/abstrakte_realität_a.jpg" alt="abstrakte_realität" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/landscape/balance_winter__b.jpg" title="KAREN SHAHVERDYAN ,,balance-winter,, 2004, oil on canvas, 90 X 110 cm">
+              <img class="gallery__image" src="img/galerie/landscape/balance_winter__a.jpg" alt="balance_winter" width="150" height="150">
+            </a>
+          </div>
 
-          <a href="img/galerie/landscape/traum_a.jpg">
-            <img class="gallery__item__image" src="img/galerie/landscape/traum_a.jpg" alt="traum" width="150" height="150">
-          </a>
+          <div class="gallery__item">
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/landscape/abstrakte_realitat_b.jpg" title="KAREN SHAHVERDYAN ,,no title,, 2005, oil on canvas, 80 X 100 cm">
+              <img class="gallery__image" src="img/galerie/landscape/abstrakte_realitat_a.jpg" alt="abstrakte_realität" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/landscape/luft_drachen_II_a.jpg">
-            <img class="gallery__item__image" src="img/galerie/landscape/luft_drachen_II_a.jpg" alt="luft_drachen_II" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/landscape/traum_b.jpg" title="KAREN SHAHVERDYAN ,,no title,, 2005, oil on canvas, 90 X 110 cm">
+              <img class="gallery__image" src="img/galerie/landscape/traum_a.jpg" alt="traum" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/landscape/der_weg_II_a.jpg">
-            <img class="gallery__item__image" src="img/galerie/landscape/der_weg_II_a.jpg" alt="der_weg_II" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/landscape/luft_drachen_II_b.jpg" title="KAREN SHAHVERDYAN ,,déjà-vu,, 2005, oil on canvas, 80 X 100 cm">
+              <img class="gallery__image" src="img/galerie/landscape/luft_drachen_II_a.jpg" alt="luft_drachen_II" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/landscape/morgenlicht_a.jpg">
-            <img class="gallery__item__image" src="img/galerie/landscape/morgenlicht_a.jpg" alt="morgenlicht" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/landscape/der_weg_II_b.jpg" title="KAREN SHAHVERDYAN ,,nostalgie,, 2006, oil on canvas, 80 X 100 cm">
+              <img class="gallery__image" src="img/galerie/landscape/der_weg_II_a.jpg" alt="der_weg_II" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/landscape/rot_a.jpg">
-            <img class="gallery__item__image" src="img/galerie/landscape/rot_a.jpg" alt="rot" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/landscape/morgenlicht_b.jpg" title="KAREN SHAHVERDYAN ,,nostalgie II,, 2004, oil on canvas, 80 X 100 cm">
+              <img class="gallery__image" src="img/galerie/landscape/morgenlicht_a.jpg" alt="morgenlicht" width="150" height="150">
+            </a>
+
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/landscape/rot_b.jpg" title="KAREN SHAHVERDYAN ,,runway,, 2006, oil on canvas, 60 X 80 cm">
+              <img class="gallery__image" src="img/galerie/landscape/rot_a.jpg" alt="rot" width="150" height="150">
+            </a>
+          </div>
         </div>
 
       </main>
 
       <footer class="main-footer">
         <div class="main-footer__copyright">
-          © COPYRIGHT KAREN SHAHVERDYAN 2014
+          © COPYRIGHT KAREN SHAHVERDYAN 2016
         </div>
-
-        <section class="social-block">
-          <a class="social-btn" href="#">Twitter<i class="icon-twitter"></i></a>
-          <a class="social-btn" href="https://www.facebook.com/realart.sk/?fref=ts">Facebook<i class="icon-facebook"></i></a>
-          <a class="social-btn" href="#" class="social-btn">VK<i class="icon-vkontakte"></i></a>
-        </section>
 
         <ul class="main-footer__menu">
           <li class="main-footer__menu-item"><a class="main-footer__menu-link" href="links.html">Links</a></li>
+          <li class="main-footer__menu-item">
+            <a class="main-footer__menu-link" href="https://www.facebook.com/realart.sk/?fref=ts" target="_blank"><i class="icon-facebook"></i></a>
+          </li>
           <li class="main-footer__menu-item"><a class="main-footer__menu-link" href="legal.html">Legal</a></li>
         </ul>
+
+        <a href="www.nerd-studio.biz" hidden>www.nerd-studio.biz<a>
       </footer>
 
-      <script src="js/jquery.magnific-popup.js"></script>
       <script src="js/script.js"></script>
 
     </div>
-
-
-
-    <script type="text/javascript">
-    $('.gallery__items').each(function() { // the containers for all your galleries
-    $(this).magnificPopup({
-        delegate: 'a', // the selector for gallery item
-        type: 'image',
-        removalDelay: 300,
-        mainClass: 'mfp-with-fade',
-        gallery: {
-          enabled:true
-        }
-
-    });
-});
 
 
     </script>

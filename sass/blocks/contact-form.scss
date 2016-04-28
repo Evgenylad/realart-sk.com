@@ -1,0 +1,51 @@
+.contact-form {
+  box-sizing: border-box;
+  width: 100%;
+
+  margin: 0 auto;
+  padding-bottom: 60px;
+  &__header {
+    margin-top: 40px;
+
+    text-align: left;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  &__description {
+    text-align: left;
+  }
+  &__label {
+    display: block;
+
+    text-align: left;
+  }
+
+  &__input {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+    border: 1px solid black;
+    outline: none;
+    border-radius: 0;
+  }
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__btn {
+    width: 30%;
+
+    border: none;
+    outline: none;
+    background-color: $btn-background;
+    color: $secondary-color;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-form {
+    padding-bottom: 0;
+  }
+}

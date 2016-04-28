@@ -1,14 +1,31 @@
-.biography-photo {
 
-  margin-top: 45px;
-}
+  .biography-photo {
+    display: block;
 
+    margin-left: 10%;
 
-@media (min-width: 768px){
+    text-align: left;
+    margin-top: 20px;
+  }
+
+@media (min-width: 600px) {
   .biography-photo {
     float: left;
-    width: 20%;
+    box-sizing: border-box;
+    width: 17%;
 
-    margin-top: 145px;
+    margin-left: 15px;
+    margin-top: 85px;
+    padding-right: 10px;
+    &__item {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .biography-photo {
+    margin-top: 0;
   }
 }

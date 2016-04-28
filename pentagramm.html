@@ -5,36 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>KAREN SHAHVERDYAN</title>
 
+    <link href="css/milkbox/milkbox.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet">
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/mootools-core.js"></script>
+    <script type="text/javascript" src="js/mootools-more.js"></script>
+    <script type="text/javascript" src="js/milkbox.js"></script>
 
   </head>
   <body>
     <div class="site-wrapper">
       <header class="page-header">
         <div class="top-row">
-
+          <div class="top-row__lang">
+            <a class="top-row__lang-item" href="#">DEUTSCH</a>
+            <a class="top-row__lang-item" href="#">ENGLISH</a>
+          </div>
         </div>
 
         <nav class="main-nav">
-          <div class="menu-toggle  menu-toggle--closed">
-            <svg class="menu-toggle__image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-           width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
-              <g>
-                <rect width="22.928" height="3.964"/>
-                <rect y="9.009" width="22.928" height="3.964"/>
-                <rect y="18.018" width="22.928" height="3.964"/>
-              </g>
-            </svg>
-          </div>
+          <button class="menu-toggle  menu-toggle--closed"></button>
 
           <ul class="main-nav__list  main-nav__list--closed">
             <li class="main-nav__item"><a class="main-nav__link" href="index.html">Home</a></li>
             <li class="main-nav__item  main-nav__item--active  main-nav__item--active-shown main-nav__item--dropdown"><a class="main-nav__link  main-nav__link--disabled" href="gallery.html">Gallery<i class="icon-down-dir"></i></a>
               <ul class="sub-menu">
                 <li class="sub-menu__item"><a class="sub-menu__link" href="pentagramm.html">pentagramm .....</a></li>
-                <li class="sub-menu__item"><a class="sub-menu__link" href="landscape.html">landscape</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="landscape.html">landscape .....</a></li>
                 <li class="sub-menu__item"><a class="sub-menu__link" href="more.html">more .....</a></li>
               </ul>
             </li>
@@ -47,148 +44,131 @@
         </nav>
       </header>
 
-      <main class="gallery-wrapper" id="wrapper">
-        <div class="gallery__items .mfp-fade" id="gallery">
+      <main class="gallery-wrapper" id="box">
+        <div class="gallery__items" id="gallery">
+          <div class="gallery__item">
 
-          <a href="img/galerie/pentagramm/conclave_II_b.jpg" title="KAREN SHAHVERDYAN ,,konklave II .....,, 2014, öl auf leinwand, 190 X 140 cm">
-            <img class="gallery__image" src="img/galerie/pentagramm/conclave_II_a.jpg" alt="conclave_II" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/pentagramm/conclave_II_b.jpg" title="KAREN SHAHVERDYAN ,,conclave II.....,, 2014, oil on canvas, 190 X 140 cm">
+              <img class="gallery__image" src="img/galerie/pentagramm/conclave_II_a.jpg" alt="conclave_II" width="150" height="150" data-pin-nopin="true">
+            </a>
 
-          <a href="img/galerie/pentagramm/conclave_b.jpg" title="KAREN SHAHVERDYAN ,,konklave.....,, 2013, öl auf leinwand, 140 X 190 cm">
-            <img class="gallery__image" src="img/galerie/pentagramm/conclave_a.jpg" alt="conclave" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/pentagramm/conclave_b.jpg" title="KAREN SHAHVERDYAN ,,conclave.....,, 2013, oil on canvas, 140 X 190 cm">
+              <img class="gallery__image" src="img/galerie/pentagramm/conclave_a.jpg" alt="conclave" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/pentagramm/5_element_b.jpg" title="KAREN SHAHVERDYAN ,,das fünfte element.....,, 2009, öl auf leinwand, 170 X 190 cm">
-            <img class="gallery__image" src="img/galerie/pentagramm/5_element_a.jpg" alt="5_element" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/pentagramm/5_element_b.jpg" title="KAREN SHAHVERDYAN ,,the fifth element.....,, 2009, oil on canvas, 170 X 190 cm">
+              <img class="gallery__image" src="img/galerie/pentagramm/5_element_a.jpg" alt="5_element" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/pentagramm/on_the_red_I_b.jpg" title="KAREN SHAHVERDYAN ,,on the red.....,, 2009, öl auf leinwand, 160 X 140 cm">
-            <img class="gallery__image" src="img/galerie/pentagramm/on_the_red_I_a.jpg" alt="on_the_red_I" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/pentagramm/on_the_red_I_b.jpg" title="KAREN SHAHVERDYAN ,,on the red.....,, 2009, oil on canvas, 160 X 140 cm">
+              <img class="gallery__image" src="img/galerie/pentagramm/on_the_red_I_a.jpg" alt="on_the_red_I" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/pentagramm/on_the_red_II_b.jpg" title="KAREN SHAHVERDYAN ,,on the red II.....,, 2009, öl auf leinwand, 160 X 140 cm">
-            <img class="gallery__image" src="img/galerie/pentagramm/on_the_red_II_a.jpg" alt="on_the_red_II" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/pentagramm/on_the_red_II_b.jpg" title="KAREN SHAHVERDYAN ,,on the red II.....,, 2009, oil on canvas, 160 X 140 cm">
+              <img class="gallery__image" src="img/galerie/pentagramm/on_the_red_II_a.jpg" alt="on_the_red_II" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/pentagramm/venus_b.jpg" title="KAREN SHAHVERDYAN ,,venus - perfect dream.....,, 2009, öl auf leinwand, 140 X 190 cm">
-            <img class="gallery__image" src="img/galerie/pentagramm/venus_a.jpg" alt="venus" width="150" height="150">
-          </a>
-        </div>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/pentagramm/venus_b.jpg" title="KAREN SHAHVERDYAN ,,venus - perfect dream.....,, 2009, oil on canvas, 140 X 190 cm">
+              <img class="gallery__image" src="img/galerie/pentagramm/venus_a.jpg" alt="venus" width="150" height="150">
+            </a>
+          </div>
 
-        <div class="gallery__items">
-          <a href="img/galerie/pentagramm/pentakel_I_b.jpg" title="KAREN SHAHVERDYAN ,,pentakel I.....,, 2009, acryl auf leinwand, 70 X 70 cm">
-            <img class="gallery__image" src="img/galerie/pentagramm/pentakel_I_a.jpg" alt="pentakel_I" width="150" height="150">
-          </a>
+          <div class="gallery__item">
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/pentagramm/pentakel_I_b.jpg" title="KAREN SHAHVERDYAN ,,pentakel I.....,, 2009, acrylic on canvas, 70 X 70 cm">
+              <img class="gallery__image" src="img/galerie/pentagramm/pentakel_I_a.jpg" alt="pentakel_I" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/pentagramm/pentakel_II_b.jpg" title="KAREN SHAHVERDYAN ,,pentakel II.....,, 2009, acryl auf leinwand, 70 X 70 cm">
-            <img class="gallery__image" src="img/galerie/pentagramm/pentakel_II_a.jpg" alt="pentakel_II" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/pentagramm/pentakel_II_b.jpg" title="KAREN SHAHVERDYAN ,,pentakel II.....,, 2009, acrylic on canvas, 70 X 70 cm">
+              <img class="gallery__image" src="img/galerie/pentagramm/pentakel_II_a.jpg" alt="pentakel_II" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/pentagramm/under_cover_b.jpg" title="KAREN SHAHVERDYAN ,,under cover I.....,, 2009, öl auf leinwand, 100 X 80 cm">
-            <img class="gallery__image" src="img/galerie/pentagramm/under_cover_a.jpg" alt="under_cover" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/pentagramm/under_cover_b.jpg" title="KAREN SHAHVERDYAN ,,under cover I.....,, 2009, oil on canvas, 100 X 80 cm">
+              <img class="gallery__image" src="img/galerie/pentagramm/under_cover_a.jpg" alt="under_cover" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/pentagramm/pentagon_b.jpg" title="KAREN SHAHVERDYAN ,,suit of light.....,, 2009, öl auf leinwand, 100 X 160 cm">
-            <img class="gallery__image" src="img/galerie/pentagramm/pentagon_a.jpg" alt="pentagon" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/pentagramm/pentagon_b.jpg" title="KAREN SHAHVERDYAN ,,pentagon.....,, 2009, acrylic on the wood, 80 X 80 cm">
+              <img class="gallery__image" src="img/galerie/pentagramm/pentagon_a.jpg" alt="pentagon" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/pentagramm/suit_of_light_b.jpg" title="KAREN SHAHVERDYAN ,,pentagon.....,, 2009, acryl auf holz, 80 X 80 cm">
-            <img class="gallery__image" src="img/galerie/pentagramm/suit_of_light_a.jpg" alt="suit_of_light" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/pentagramm/suit_of_light_b.jpg" title="KAREN SHAHVERDYAN ,,suit of light.....,, 2009, oil on canvas, 100 X 160 cm">
+              <img class="gallery__image" src="img/galerie/pentagramm/suit_of_light_a.jpg" alt="suit_of_light" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/pentagramm/elixir_b.jpg" title="KAREN SHAHVERDYAN ,,suit of light.....,, 2009, öl auf leinwand, 100 X 160 cm">
-            <img class="gallery__image" src="img/galerie/pentagramm/elixir_a.jpg" alt="elixir" width="150" height="150">
-          </a>
-        </div>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/pentagramm/elixir_b.jpg" title="KAREN SHAHVERDYAN ,,elixier.....,, 2009, acrylic on canvas, 100 X 80 cm">
+              <img class="gallery__image" src="img/galerie/pentagramm/elixir_a.jpg" alt="elixir" width="150" height="150">
+            </a>
+          </div>
 
-        <div class="gallery__items">
-          <a href="img/galerie/pentagramm/pentagrámmos_b.jpg" title="KAREN SHAHVERDYAN ,,elixier.....,, 2009, acryl auf leinwand, 100 X 80 cm">
-            <img class="gallery__image" src="img/galerie/pentagramm/pentagrámmos_a.jpg" alt="pentagrámmos" width="150" height="150">
-          </a>
+          <div class="gallery__item">
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/pentagramm/pentagrammos_b.jpg" title="KAREN SHAHVERDYAN ,,pentagrámmos.....,, 2009, acrylic on canvas, 70 X 70 cm">
+              <img class="gallery__image" src="img/galerie/pentagramm/pentagrammos_a.jpg" alt="pentagrammos" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/pentagramm/under_cover_II_b.jpg" title="KAREN SHAHVERDYAN ,,pentagrámmos.....,, 2009, acryl auf leinwand, 70 X 70 cm">
-            <img class="gallery__image" src="img/galerie/pentagramm/under_cover_II_a.jpg" alt="under_cover_II" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/pentagramm/under_cover_II_b.jpg" title="KAREN SHAHVERDYAN ,,under cover II.....,, 2010, oil on canvas, 110 X 80 cm">
+              <img class="gallery__image" src="img/galerie/pentagramm/under_cover_II_a.jpg" alt="under_cover_II" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/pentagramm/under_cover_III_b.jpg" title="KAREN SHAHVERDYAN ,,under cover II.....,, 2010, öl auf leinwand, 110 X 80 cm">
-            <img class="gallery__image" src="img/galerie/pentagramm/under_cover_III_a.jpg" alt="under_cover_III" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/pentagramm/under_cover_III_b.jpg" title="KAREN SHAHVERDYAN ,,under cover III.....,, 2011, oil on canvas, 110 X 80 cm">
+              <img class="gallery__image" src="img/galerie/pentagramm/under_cover_III_a.jpg" alt="under_cover_III" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/pentagramm/suit_of_light_II_b.jpg" title="KAREN SHAHVERDYAN ,,under cover III.....,, 2011, öl auf leinwand, 110 X 80 cm">
-            <img class="gallery__image" src="img/galerie/pentagramm/suit_of_light_II_a.jpg" alt="suit_of_light_II" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/pentagramm/suit_of_light_II_b.jpg" title="KAREN SHAHVERDYAN ,,suit of light II.....,, 2011, oil on canvas, 110 X 180 cm">
+              <img class="gallery__image" src="img/galerie/pentagramm/suit_of_light_II_a.jpg" alt="suit_of_light_II" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/pentagramm/attack_b.jpg" title="KAREN SHAHVERDYAN ,,suit of light II.....,, 2011, öl auf leinwand, 110 X 180 cm">
-            <img class="gallery__image" src="img/galerie/pentagramm/attack_a.jpg" alt="attack_a" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/pentagramm/attack_b.jpg" title="KAREN SHAHVERDYAN ,,attack.....,, 2011, oil on canvas, 110 X 130 cm">
+              <img class="gallery__image" src="img/galerie/pentagramm/attack_a.jpg" alt="attack_a" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/pentagramm/suit_of_light_left_b.jpg" title="KAREN SHAHVERDYAN ,,suit of light III.....,, 2012, öl auf leinwand, 130 X 90 cm">
-            <img class="gallery__image" src="img/galerie/pentagramm/suit_of_light_left_a.jpg" alt="suit_of_light_left" width="150" height="150">
-          </a>
-        </div>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/pentagramm/suit_of_light_left_b.jpg" title="KAREN SHAHVERDYAN ,,suit of light III.....,, 2012, oil on canvas, 130 X 90 cm">
+              <img class="gallery__image" src="img/galerie/pentagramm/suit_of_light_left_a.jpg" alt="suit_of_light_left" width="150" height="150">
+            </a>
+          </div>
 
-        <div class="gallery__items">
-          <a href="img/galerie/pentagramm/suit_of_light_center_b.jpg" title="KAREN SHAHVERDYAN ,,suit of light III.....,, 2012, öl auf leinwand, 130 X 210 cm">
-            <img class="gallery__image" src="img/galerie/pentagramm/suit_of_light_center_a.jpg" alt="suit_of_light_center" width="150" height="150">
-          </a>
+          <div class="gallery__item">
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/pentagramm/suit_of_light_center_b.jpg" title="KAREN SHAHVERDYAN ,,suit of light III.....,, 2012, oil on canvas, 130 X 210 cm">
+              <img class="gallery__image" src="img/galerie/pentagramm/suit_of_light_center_a.jpg" alt="suit_of_light_center" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/pentagramm/suit_of_light_right_b.jpg" title="KAREN SHAHVERDYAN ,,suit of light III.....,, 2012, öl auf leinwand, 130 X 90 cm">
-            <img class="gallery__image" src="img/galerie/pentagramm/suit_of_light_right_a.jpg" alt="suit_of_light_right" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/pentagramm/suit_of_light_right_b.jpg" title="KAREN SHAHVERDYAN ,,suit of light III.....,, 2012, oil on canvas, 130 X 90 cm">
+              <img class="gallery__image" src="img/galerie/pentagramm/suit_of_light_right_a.jpg" alt="suit_of_light_right" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/pentagramm/pentagramm_I_b.jpg" title="KAREN SHAHVERDYAN ,,pentagramm I.....,, 2009, öl auf leinwand, 150 X 150 cm">
-            <img class="gallery__image" src="img/galerie/pentagramm/pentagramm_I_a.jpg" alt="pentagramm_I" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/pentagramm/pentagramm_I_b.jpg" title="KAREN SHAHVERDYAN ,,pentagramm I.....,, 2009, oil on canvas, 150 X 150 cm">
+              <img class="gallery__image" src="img/galerie/pentagramm/pentagramm_I_a.jpg" alt="pentagramm_I" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/pentagramm/pentagramm_II_b.jpg" title="KAREN SHAHVERDYAN ,,pentagramm II.....,, 2009, öl auf leinwand, 150 X 150 cm">
-            <img class="gallery__image" src="img/galerie/pentagramm/pentagramm_II_a.jpg" alt="pentagramm_II" width="150" height="150">
-          </a>
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/pentagramm/pentagramm_II_b.jpg" title="KAREN SHAHVERDYAN ,,pentagramm II.....,, 2009, oil on canvas, 150 X 150 cm">
+              <img class="gallery__image" src="img/galerie/pentagramm/pentagramm_II_a.jpg" alt="pentagramm_II" width="150" height="150">
+            </a>
 
-          <a href="img/galerie/pentagramm/granate_b.jpg" title="KAREN SHAHVERDYAN ,,granate.....,, 2009, öl auf leinwand, 55 X 65 cm">
-            <img class="gallery__image" src="img/galerie/pentagramm/granate_a.jpg" alt="granate" width="150" height="150">
-          </a>
-
+            <a class="gallery__link" data-milkbox="gall1" href="img/galerie/pentagramm/granate_b.jpg" title="KAREN SHAHVERDYAN ,,granate.....,, 2009, oil on canvas, 55 X 65 cm">
+              <img class="gallery__image" src="img/galerie/pentagramm/granate_a.jpg" alt="granate" width="150" height="150">
+            </a>
+          </div>
         </div>
 
       </main>
 
       <footer class="main-footer">
         <div class="main-footer__copyright">
-          © COPYRIGHT KAREN SHAHVERDYAN 2014
+          © COPYRIGHT KAREN SHAHVERDYAN 2016
         </div>
-
-        <section class="social-block">
-          <a class="social-btn" href="#">Twitter<i class="icon-twitter"></i></a>
-          <a class="social-btn" href="https://www.facebook.com/realart.sk/?fref=ts">Facebook<i class="icon-facebook"></i></a>
-          <a class="social-btn" href="#" class="social-btn">VK<i class="icon-vkontakte"></i></a>
-        </section>
 
         <ul class="main-footer__menu">
           <li class="main-footer__menu-item"><a class="main-footer__menu-link" href="links.html">Links</a></li>
+          <li class="main-footer__menu-item">
+            <a class="main-footer__menu-link" href="https://www.facebook.com/realart.sk/?fref=ts" target="_blank"><i class="icon-facebook"></i></a>
+          </li>
           <li class="main-footer__menu-item"><a class="main-footer__menu-link" href="legal.html">Legal</a></li>
         </ul>
+
+        <a href="www.nerd-studio.biz" hidden>www.nerd-studio.biz<a>
       </footer>
 
-      <script src="js/jquery.magnific-popup.js"></script>
       <script src="js/script.js"></script>
 
     </div>
-
-
-
-    <script type="text/javascript">
-    $('.gallery__items').each(function() { // the containers for all your galleries
-    $(this).magnificPopup({
-        delegate: 'a', // the selector for gallery item
-        type: 'image',
-        removalDelay: 300,
-        mainClass: 'mfp-with-fade',
-        gallery: {
-          enabled:true
-        }
-
-    });
-});
 
     </script>
   </body>

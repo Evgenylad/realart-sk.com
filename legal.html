@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>KAREN SHAHVERDYAN</title>
+
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -20,7 +21,7 @@
           <button class="menu-toggle  menu-toggle--closed"></button>
 
           <ul class="main-nav__list  main-nav__list--closed">
-            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Home</a></li>
+            <li class="main-nav__item  main-nav__item--active  main-nav__item--active-shown"><a class="main-nav__link" href="index.html">Home</a></li>
             <li class="main-nav__item  main-nav__item--dropdown"><a class="main-nav__link  main-nav__link--disabled" href="gallery.html">Gallery<i class="icon-down-dir"></i></a>
               <ul class="sub-menu">
                 <li class="sub-menu__item"><a class="sub-menu__link" href="pentagramm.html">pentagramm .....</a></li>
@@ -30,18 +31,32 @@
             </li>
             <li class="main-nav__item"><a class="main-nav__link" href="exhibitions.html">Exhibitions</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="biography.html">Biography</a></li>
-            <li class="main-nav__item  main-nav__item--active  main-nav__item--active-shown"><a class="main-nav__link" href="press.html">Press</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="press.html">Press</a></li>
             <li class="main-nav__item  main-nav__item--close"><a class="main-nav__link" href="contact.html">Contact</a></li>
           </ul>
 
         </nav>
       </header>
 
-      <main class="content  content--press">
-        <img class="press-item__image  press-item__image--inner-page" src="img/presse/palette_zeichenstift/palette_zeichenstift_cover.jpg" alt="Palette" width="900" height="1322">
-        <img class="press-item__image  press-item__image--inner-page" src="img/presse/palette_zeichenstift/palette_zeichenstift_1.jpg" alt="Palette" width="900" height="1301">
-        <img class="press-item__image  press-item__image--inner-page" src="img/presse/palette_zeichenstift/palette_zeichenstift_2.jpg" alt="Palette" width="900" height="1305">
-        <img class="press-item__image  press-item__image--inner-page" src="img/presse/palette_zeichenstift/palette_zeichenstift_3.jpg" alt="Palette" width="900" height="1189">
+      <main class="content">
+        <div class="contacts">
+          <h1 class="contacts__header"> <i>K</i>AREN <i>S</i>HAHVERDYAN</h1>
+
+          <p class="contacts__item">
+          <span class="contacts__phone"> Tel:
+            <a class="contacts__phone-link" href="tel:+491711706545">+49 171 170 65 45</a>
+          </span>
+          <a class="contacts__email" href="mailto:info@realart-sk.com?subject=Письмо с сайта">info@realart-sk.com</a>
+          </p>
+
+          <p class="contacts__item">www.realart-sk.com</p>
+
+          <h2 class="contacts__h2">Copyright: </h2>
+          <p class="contacts__item  contacts__item--fullwidth">Any picture of the works, also playing in relation to the content of these pages, whether by electronic or other method, in terms of processing, distribution, and reproduction may be made only after written approval of the artist.</p>
+
+          <h2 class="contacts__h2">Disclaimer:</h2>
+          <p class="contacts__item  contacts__item--fullwidth">Despite careful checking I assume no liability for the content of external links. For the content of linked pages their operators are responsible.</p>
+        </div>
       </main>
 
       <footer class="main-footer">

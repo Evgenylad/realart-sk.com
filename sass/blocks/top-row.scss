@@ -1,15 +1,38 @@
 .top-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   min-height: 100px;
 
   background: url("../img/title.jpg") no-repeat;
   background-size: cover;
+  &--landscape {
+    background: url("../img/landscape_title.jpg") no-repeat;
+    background-size: cover;
+  }
+  &__lang {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+
+    padding: 6px 12px;
+
+    text-align: right;
+  }
+  &__lang-item {
+    text-decoration: none;
+    color: $secondary-color;
+    font-size: 12px;
+    &:first-child {
+      padding-right: 10px;
+    }
+  }
 }
 
-@media (min-width: 768px)  {
+@media (min-width: 900px)  {
   .top-row {
-    min-height: 200px;
-    
-    margin-bottom: 5px;
-    margin-top: 15px;
+    min-height: 191px;
+
+    margin-bottom: 2px;
   }
 }

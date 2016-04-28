@@ -4,34 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>KAREN SHAHVERDYAN</title>
-    <link href="css/normalize.css" rel="stylesheet">
+
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="site-wrapper">
       <header class="page-header">
         <div class="top-row">
-
+          <div class="top-row__lang">
+            <a class="top-row__lang-item" href="#">DEUTSCH</a>
+            <a class="top-row__lang-item" href="#">ENGLISH</a>
+          </div>
         </div>
 
         <nav class="main-nav">
-          <button class="menu-toggle  menu-toggle--closed">
-            <svg class="menu-toggle__image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-           width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
-              <g>
-                <rect width="22.928" height="3.964"/>
-                <rect y="9.009" width="22.928" height="3.964"/>
-                <rect y="18.018" width="22.928" height="3.964"/>
-              </g>
-            </svg>
-          </button>
+          <button class="menu-toggle  menu-toggle--closed"></button>
 
           <ul class="main-nav__list  main-nav__list--closed">
             <li class="main-nav__item"><a class="main-nav__link" href="index.html">Home</a></li>
             <li class="main-nav__item  main-nav__item--dropdown"><a class="main-nav__link  main-nav__link--disabled" href="gallery.html">Gallery<i class="icon-down-dir"></i></a>
               <ul class="sub-menu">
                 <li class="sub-menu__item"><a class="sub-menu__link" href="pentagramm.html">pentagramm .....</a></li>
-                <li class="sub-menu__item"><a class="sub-menu__link" href="landscape.html">landscape</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="landscape.html">landscape .....</a></li>
                 <li class="sub-menu__item"><a class="sub-menu__link" href="more.html">more .....</a></li>
               </ul>
             </li>
@@ -46,7 +40,7 @@
 
       <main class="biography-wrapper">
         <div class="biography-photo">
-          <img src="img/sk.jpg" alt="KAREN SHAHVERDYAN" width="150" height="150">
+          <img class="biography-photo__item" src="img/karen.jpg" srcset="img/karen@2x.jpg 2x" alt="KAREN SHAHVERDYAN" width="151" height="183">
         </div>
 
         <div class="biography-content">
@@ -58,18 +52,18 @@
             <h2 class="biography-content__caption">Education</h2>
 
             <ul class="biography-content__row">
-              <li class="biography-content__cell">1984 - 1988</li>
-              <li class="biography-content__cell">Study at the Art School Terlemesyan Yerevan / Armenia, Graduated teacher for art and technical drawing</li>
+              <li class="biography-content__cell  biography-content__cell--first">1984 - 1988</li>
+              <li class="biography-content__cell">Study at the Art School Terlemesyan Yerevan/Armenia, Graduated teacher for art and technical drawing</li>
             </ul>
 
             <ul class="biography-content__row">
-              <li class="biography-content__cell">1989 - 1995</li>
-              <li class="biography-content__cell">Study at the Tbilisi State Academy of Arts / Georgia, Faculty of graphics, graduated graphic designer</li>
+              <li class="biography-content__cell  biography-content__cell--first">1989 - 1995</li>
+              <li class="biography-content__cell">Study at the Tbilisi State Academy of Arts/Georgia, Faculty of graphics, graduated graphic designer</li>
             </ul>
 
             <ul class="biography-content__row">
-              <li class="biography-content__cell">1998 - 1999</li>
-              <li class="biography-content__cell">Postgraduate internship at the State Art Museum Tbilisi / Georgia Dept. restoration of oil paintings</li>
+              <li class="biography-content__cell  biography-content__cell--first">1998 - 1999</li>
+              <li class="biography-content__cell">Postgraduate internship at the State Art Museum Tbilisi/Georgia Dept. restoration of oil paintings</li>
             </ul>
           </div>
 
@@ -77,31 +71,33 @@
             <h2 class="biography-content__caption">Further education</h2>
 
             <ul class="biography-content__row">
-              <li class="biography-content__cell">2003 - 2004</li>
+              <li class="biography-content__cell  biography-content__cell--first">2003 - 2004</li>
               <li class="biography-content__cell">Web - Publishing, DTP AKADEMIE RheinMain GmbH</li>
             </ul>
-          </div>
 
-          <p>Since 1999 I live and work in Germany as an artist and graphic designer</p>
+            <ul class="biography-content__row">
+              <li class="biography-content__cell  biography-content__cell--first">Since 1999</li>
+              <li class="biography-content__cell  biography-content__cell--nowrap">I live and work in Germany as an artist and graphic designer</li>
+            </ul>
+          </div>
         </div>
 
       </main>
 
       <footer class="main-footer">
         <div class="main-footer__copyright">
-          © COPYRIGHT KAREN SHAHVERDYAN 2014
+          © COPYRIGHT KAREN SHAHVERDYAN 2016
         </div>
-
-        <section class="social-block">
-          <a class="social-btn" href="#">Twitter<i class="icon-twitter"></i></a>
-          <a class="social-btn" href="https://www.facebook.com/realart.sk/?fref=ts">Facebook<i class="icon-facebook"></i></a>
-          <a class="social-btn" href="#" class="social-btn">VK<i class="icon-vkontakte"></i></a>
-        </section>
 
         <ul class="main-footer__menu">
           <li class="main-footer__menu-item"><a class="main-footer__menu-link" href="links.html">Links</a></li>
+          <li class="main-footer__menu-item">
+            <a class="main-footer__menu-link" href="https://www.facebook.com/realart.sk/?fref=ts" target="_blank"><i class="icon-facebook"></i></a>
+          </li>
           <li class="main-footer__menu-item"><a class="main-footer__menu-link" href="legal.html">Legal</a></li>
         </ul>
+
+        <a href="www.nerd-studio.biz" hidden>www.nerd-studio.biz<a>
       </footer>
 
       <script src="js/script.js"></script>

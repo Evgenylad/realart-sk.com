@@ -1,5 +1,21 @@
 .gallery-wrapper {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+
+  min-height: 375px;
+}
+
+@media (min-width: 768px) {
+  .gallery-wrapper {
+    min-height: 703px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery-wrapper {
+    min-height: 701px;
+  }
 }

@@ -1,0 +1,33 @@
+.menu-toggle {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  width: 35px;
+  height: 35px;
+
+  z-index: 10;
+
+  background-color: black;
+  border: none;
+  outline: none;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 35px;
+    height: 2px;
+
+    background-color: #ffffff;
+    box-shadow: 0 10px 0 0 #ffffff,
+    0 20px 0 0 #ffffff,;
+  }
+}
+
+@media (min-width: 1200px)  {
+  .menu-toggle {
+    display: none;
+  }
+}
